@@ -34,3 +34,22 @@ main {
   align-items: flex-start;
   gap: 12px;
 }
+
+h2 {
+  margin: 0;
+  font-size: clamp(4rem, 5vw, 7rem);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #416480;
+}
+
+.content > p {
+  margin: 0;
+  color: #769eb3;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+}
