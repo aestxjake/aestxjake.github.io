@@ -42,12 +42,12 @@ h2 {
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #416480;
+  color: #8eb9dd;
 }
 
 .content > p {
   margin: 0;
-  color: #769eb3;
+  color: #8eb9dd;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -65,7 +65,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #aaa;
+  color: #5699c0;
 }
 
 #interests ul {
@@ -78,7 +78,7 @@ h2 {
 }
 
 #interests li {
-  color: #555;
+  color: #5699c0;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 20px;
@@ -93,8 +93,30 @@ h2 {
 }
 
 #interests li:hover {
-  background: #000;
+  background: #004872;
   color: #fff;
-  border-color: #000;
+  border-color: #ffffff;
   transform: translateY(-2px);
 }
+
+.sidebar-img {
+  width:100%;
+  max-width:760px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  border-radius: 64px;
+  filter: sepia(0.3) contrast(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sidebar-img:hover {
+  filter: grayscale(0%);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
