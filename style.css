@@ -4,9 +4,13 @@
 
 body {
   margin: 0;
-  background: #D0E1F3;
   color: #222;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  background-image: url(https://cdn.shopify.com/s/files/1/0603/5439/6408/files/fishcircle_2000x952_09cd941e-e1e9-4ed6-9b93-a94166e9c37f.webp?v=1653509090);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(1px);
 }
 
 #all-contents {
@@ -42,7 +46,8 @@ h2 {
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #8eb9dd;
+  color: #70d8be;
+  font-style: ;
 }
 
 .content > p {
@@ -127,8 +132,8 @@ nav {
   align-items: center;
   margin-bottom: 48px;
   padding: 16px 24px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  background: #70d8be;
+  border: 1px solid #54b49c;
   border-radius: 12px;
 }
 
@@ -150,7 +155,7 @@ nav h1 {
 }
 
 .nav-li a {
-  color: #666;
+  color: #fafafa;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
