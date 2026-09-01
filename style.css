@@ -47,7 +47,6 @@ h2 {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #70d8be;
-  font-style: ;
 }
 
 .content > p {
@@ -135,6 +134,7 @@ nav {
   background: #70d8be;
   border: 1px solid #54b49c;
   border-radius: 12px;
+  box-shadow: 0 8px 30px #70d8be;
 }
 
 nav h1 {
@@ -143,7 +143,7 @@ nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #000;
+  color: #ffffff;
 }
 
 #nav-ul {
@@ -167,7 +167,7 @@ nav h1 {
 }
 
 .nav-li a:hover {
-  background: #004872;
+  background: #54b49c;
   color: #fff;
 }
 
