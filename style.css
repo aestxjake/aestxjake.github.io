@@ -6,11 +6,11 @@ body {
   margin: 0;
   color: #222;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-image: url(https://cdn.shopify.com/s/files/1/0603/5439/6408/files/fishcircle_2000x952_09cd941e-e1e9-4ed6-9b93-a94166e9c37f.webp?v=1653509090);
+  background-image: url(https://oceanpanel.org/wp-content/uploads/2020/06/summer-time-under-the-sea-ocean-water-2021-08-28-14-51-43-utc-scaled.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  backdrop-filter: blur(1px);
+ 
 }
 
 #all-contents {
@@ -47,11 +47,12 @@ h2 {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #70d8be;
+  text-shadow: 0 16px 30px #70d8be;
 }
 
 .content > p {
   margin: 0;
-  color: #5699c0;
+  color: #ffffff;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -69,7 +70,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #5699c0;
+  color: #ffffff;
 }
 
 #interests ul {
