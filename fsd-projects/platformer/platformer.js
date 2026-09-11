@@ -18,7 +18,7 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(118, 0, 233)"); // bottom wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(0, 194, 42)"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
@@ -30,38 +30,28 @@ $(function () {
 
     toggleGrid();
 
-    // TODO 2 - Create Platforms
-    
-    createPlatform(0, 150, 100, 15, "black");
-    createPlatform(100, 150, 15, 50, "black");
-    createPlatform(100, 200, 1100, 15, "black");
-    createPlatform(1200, 400, 100, 15, "black");
-    createPlatform(900, 400, 100, 15, "black");
-    createPlatform(600, 400, 100, 15, "black");
-    createPlatform(300, 400, 100, 15, "black");
-    createPlatform(0, 400, 100, 15, "black");
-    createPlatform(100, 620, 1400, 15, "black");
+    // TODO 2 - Create Platforms 
+ 
+    createPlatform(400, 550, 30, 200, "brown");
+    createPlatform(310, 590, 200, 30, "darkgreen");
+    createPlatform(320, 570, 180, 30, "darkgreen");
+    createPlatform(330, 540, 160, 30, "darkgreen");
+    createPlatform(340, 510, 140, 30, "darkgreen");
+    createPlatform(350, 480, 120, 30, "darkgreen");
+    createPlatform(360, 450, 100, 30, "darkgreen");
+    createPlatform(370, 420, 80, 30, "darkgreen");
+    createPlatform(380, 390, 60, 30, "darkgreen");
 
-    createPlatform(1380, 300, 30, 15, "red");
-    createPlatform(1380, 400, 30, 15, "orange");
-    createPlatform(1380, 500, 30, 15, "yellow");
-
-
-    
+    createPlatform(0, 610, 20, 15, "darkgreen");
+    createPlatform(0, 510, 20, 15, "darkgreen");
+    createPlatform(0, 410, 20, 15, "darkgreen");
+    createPlatform(0, 310, 20, 15, "darkgreen");
 
     // TODO 3 - Create Collectables
 
-    createCollectable("database", 30, 220, 0, 0);
-    createCollectable("database", 1350, 40, 0, 0);
-    createCollectable("database", 1280, 690, 0, 0);
+    createCollectable("database", 388, 350);
     
     // TODO 4 - Create Cannons
-    
-    createCannon("top", 260, 1000);
-    createCannon("top", 560, 1500);
-    createCannon("top", 860, 1200);
-    createCannon("top", 1160, 1300);
-    createCannon("right", 250, 2000);
     
 
     //////////////////////////////////
