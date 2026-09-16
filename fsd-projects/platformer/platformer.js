@@ -18,7 +18,7 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(0, 194, 42)"); // bottom wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(84, 114, 59)"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
@@ -47,12 +47,19 @@ $(function () {
     createPlatform(0, 410, 20, 15, "darkgreen");
     createPlatform(0, 310, 20, 15, "darkgreen");
 
+    createPlatform(100, 300, 80, 20, "white", 100, 350, 2, 200, 200, 0)
+    createPlatform(100, 300, 20, 180, "darkgreen", 310, 310, 0, 610, 780, 2)
+
     // TODO 3 - Create Collectables
 
     createCollectable("database", 388, 350);
+    createCollectable("database", 40, 40);
+    createCollectable("database", 355, 700);
     
     // TODO 4 - Create Cannons
     
+    createCannon("top", 475, 1900);
+    createCannon("right", 790, 2000);
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
