@@ -47,20 +47,21 @@ $(function () {
     createPlatform(0, 410, 20, 15, "darkgreen");
     createPlatform(0, 310, 20, 15, "darkgreen");
 
-    createPlatform(100, 300, 150, 20, "white", 100, 1270, 3, 200, 200, 0)
-    createPlatform(100, 300, 20, 180, "darkgreen", 310, 310, 0, 610, 780, 2)
+    createPlatform(100, 300, 200, 20, "white", 0, 1270, 3, 200, 200, 0)
+    createPlatform(100, 300, 20, 180, "darkgreen", 310, 310, 0, 610, 800, 1.5)
     createPlatform(100, 100, 80, 15, "darkgreen", 540, 540, 0, 610, 780, 1)
     // TODO 3 - Create Collectables
 
-    createCollectable("database", 388, 350);
-    createCollectable("database", 40, 40);
+    createCollectable("diamond", 388, 350);
+    createCollectable("steve", 40, 40);
     createCollectable("database", 355, 700);
-    createCollectable("database", 1340, 40);
+    createCollectable("max", 1340, 40);
    
     // TODO 4 - Create Cannons
     
     createCannon("top", 475, 1900);
-    createCannon("right", 790, 2800);
+    // createCannon("right", 790, 2800);
+    createCannon("right", 240, 2500);
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
