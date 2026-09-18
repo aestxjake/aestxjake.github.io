@@ -47,9 +47,15 @@ $(function () {
     createPlatform(0, 410, 20, 15, "darkgreen");
     createPlatform(0, 310, 20, 15, "darkgreen");
 
-    createPlatform(100, 300, 200, 20, "white", 0, 1270, 4, 200, 200, 0)
-    createPlatform(100, 300, 20, 180, "darkgreen", 310, 310, 0, 610, 800, 1.5)
-    createPlatform(100, 100, 80, 15, "darkgreen", 540, 540, 0, 610, 780, 1)
+    createPlatform(530, 650, 80, 15, "darkgreen");
+    createPlatform(730, 550, 80, 15, "darkgreen");
+    createPlatform(930, 450, 800, 15, "darkgreen");
+
+    createPlatform(100, 300, 200, 20, "white", -50, 1270, 4, 200, 200, 0);
+    createPlatform(120, 280, 160, 20, "white", -30, 1290, 4, 180, 180, 0);
+
+    createPlatform(100, 300, 20, 180, "darkgreen", 310, 310, 0, 610, 800, 1.5);
+    
     // TODO 3 - Create Collectables
 
     createCollectable("diamond", 388, 350);
@@ -59,9 +65,16 @@ $(function () {
    
     // TODO 4 - Create Cannons
     
-    createCannon("top", 475, 1900);
-    createCannon("right", 790, 2800);
-    createCannon("right", 240, 2500);
+    createCannon("top", 475, 1900, 15, 30, 275, 600, 2);
+    createCannon("right", 790, 2400);
+    // createCannon("right", 240, 2500);
+
+    
+    // EXTRA CHALLENGES - BAD PLATFORMS
+ 
+    createBadPlatform(1000, 120, 10, 70, "yellow");
+    createBadPlatform(600, 120, 10, 70, "yellow");
+    createBadPlatform(550, 220, 1000, 5, "lightgrey");
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
