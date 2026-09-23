@@ -59,7 +59,7 @@ $(function () {
     // TODO 3 - Create Collectables
 
     createCollectable("diamond", 388, 350);
-    createCollectable("steve", 40, 40);
+    createCollectable("steve", 100, 40);
     createCollectable("database", 355, 700);
     createCollectable("max", 1340, 40);
     createCollectable("kennedi", 1300, 410, );
@@ -76,6 +76,7 @@ $(function () {
     createBadPlatform(1000, 120, 10, 70, "yellow");
     createBadPlatform(600, 120, 10, 70, "yellow");
     createBadPlatform(550, 220, 1000, 5, "white");
+    createBadPlatform(430, 735, 1000, 10, "green");
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
