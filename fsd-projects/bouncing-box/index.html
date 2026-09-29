@@ -71,7 +71,9 @@
         // TODO 2 - Variable declarations
 
 
-
+var positionX = 0; // This variable will store the x-position of the box on the screen
+var points = 0;
+var speed = 10;
 
 
         /**
@@ -81,9 +83,21 @@
          */
         function update() {
 
-        
+          // moveBoxTo(); // moves box to x-position
+          moveBoxTo(positionX);
+          positionX = positionX + speed;
 
-          
+          if (positionX > boardWidth) {
+
+            speed *= -1;
+
+          }
+
+          if (positionX < 0) {
+
+            speed *= -1;
+
+          }
         }
 
         /**
@@ -95,14 +109,18 @@
          */
         function handleBoxClick() {
 
-
-
+          positionX = 0;
+          changeBoxText(points);
+          points = points + 1;
+          speed = 3 * points + 10
 
         }
 
 
+
+}
         
-      })();
+      )();
     </script>
   </body>
 </html>
