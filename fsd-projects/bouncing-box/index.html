@@ -55,9 +55,11 @@
         box.on("click", handleBoxClick);
 
         // moves the Box to a new position on the screen along the X-Axis
-        function moveBoxTo(newPositionX) {
+        function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
+          box.css("top", newPositionY);
         }
+
 
         // changes the text displayed on the Box
         function changeBoxText(newText) {
@@ -75,6 +77,13 @@ var positionX = 0; // This variable will store the x-position of the box on the 
 var points = 0;
 var speed = 10;
 
+var positionY = 0;
+var speedY = 10;
+
+var position = positionX + positionY
+
+var boardHeight = jQuery(window).height();
+var randNum = Math.random() * 100;
 
         /**
          * This Function will be called 20 times/second.
@@ -83,9 +92,9 @@ var speed = 10;
          */
         function update() {
 
-          // moveBoxTo(); // moves box to x-position
-          moveBoxTo(positionX);
+          moveBoxTo(positionX, positionY);
           positionX = positionX + speed;
+          positionY = positionY + speedY;
 
           if (positionX > boardWidth) {
 
@@ -98,6 +107,19 @@ var speed = 10;
             speed *= -1;
 
           }
+
+          if (positionY > boardHeight) {
+
+            speedY *= -1;
+
+          }
+
+          if (positionY < 0) {
+
+            speedY *= -1;
+
+          }
+
         }
 
         /**
@@ -109,7 +131,8 @@ var speed = 10;
          */
         function handleBoxClick() {
 
-          positionX = 0;
+          positionX = Math.ceil(Math.random() * 1000);
+          positionY = Math.ceil(Math.random() * 500);
           changeBoxText(points);
           points = points + 1;
           speed = 3 * points + 10
