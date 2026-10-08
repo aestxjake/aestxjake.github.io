@@ -6,9 +6,12 @@
     <script src="jquery.min.js"></script>
     <style>
       .box {
-        width: 70px;
-        height: 70px;
-        background-color: teal;
+        width: 100px;
+        height: 100px;
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/041/640/042/small/ai-generated-isolated-soap-bubble-cut-out-soap-bubble-on-transparent-background-png.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -21,7 +24,13 @@
 
       .board {
         height: 100vh;
+        background-image: url(https://t4.ftcdn.net/jpg/10/15/52/23/360_F_1015522373_Q34xhiDaoR3WzDMQTGYB43RV7BTYYmLC.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
       }
+
+      
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   </head>
@@ -29,7 +38,6 @@
   <body class="board">
     <!-- HTML for the box -->
     <div class="box">?</div>
-
     <script>
       (function () {
         "use strict";
@@ -74,7 +82,7 @@
 
 
 var positionX = 0; // This variable will store the x-position of the box on the screen
-var points = 0;
+var points = 1;
 var speed = 10;
 
 var positionY = 0;
@@ -83,7 +91,6 @@ var speedY = 10;
 var position = positionX + positionY
 
 var boardHeight = jQuery(window).height();
-var randNum = Math.random() * 100;
 
         /**
          * This Function will be called 20 times/second.
@@ -97,27 +104,19 @@ var randNum = Math.random() * 100;
           positionY = positionY + speedY;
 
           if (positionX > boardWidth) {
-
             speed *= -1;
-
           }
 
           if (positionX < 0) {
-
             speed *= -1;
-
           }
 
           if (positionY > boardHeight) {
-
             speedY *= -1;
-
           }
 
           if (positionY < 0) {
-
             speedY *= -1;
-
           }
 
         }
@@ -131,16 +130,12 @@ var randNum = Math.random() * 100;
          */
         function handleBoxClick() {
 
-          positionX = Math.ceil(Math.random() * 1000);
-          positionY = Math.ceil(Math.random() * 500);
+          positionX = Math.ceil(Math.random() * boardWidth);
+          positionY = Math.ceil(Math.random() * boardHeight);
           changeBoxText(points);
           points = points + 1;
-          speed = 3 * points + 10
-
+          speed = 3 * points + 1
         }
-
-
-
 }
         
       )();
